@@ -42,7 +42,7 @@ class CustomerEdit extends Component {
     event.preventDefault();
     const {item} = this.state;
 
-    await fetch('/api/customers', {
+    await fetch('/api/customer', {
       method: (item.id) ? 'PUT' : 'POST',
       headers: {
         'Accept': 'application/json',
