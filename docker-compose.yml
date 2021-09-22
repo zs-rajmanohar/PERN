@@ -6,7 +6,7 @@ services:
             ports:
                 - "5432:5432"
             environment:
-              POSTGRES_PASSWORD: 12345
+              POSTGRES_PASSWORD: 123456
               POSTGRES_USER: postgres
               POSTGRES_DB: loizenaidb
   backend:
@@ -15,7 +15,7 @@ services:
         environment:
          DATABASE: loizenaidb
          USERNAME: postgres
-         PASSWORD: 12345
+         PASSWORD: 123456
          HOST: postgres
         ports:
             - "8080:8080"
